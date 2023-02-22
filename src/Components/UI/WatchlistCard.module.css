@@ -1,0 +1,50 @@
+.container {
+    text-align: center;
+    width: 260px;
+    height: 450px;
+    margin: 30px;
+    margin-top: 2%;
+    position: relative;
+    color: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 0px 18px 11px rgba(255, 255, 255, 0.671);
+    padding-bottom: 0px;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+
+.genre {
+    position: relative;
+    top: -20px;
+    font-weight: bold;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.btn {
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+    font-size: 140%;
+    background-color: rgb(49, 64, 174);
+    color: white;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.image {
+    width: 230px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 0 0px 1px 3px rgba(241, 238, 238, 0.5);
+
+}

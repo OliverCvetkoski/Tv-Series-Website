@@ -1,0 +1,31 @@
+.loading_div {
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    height: 70px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #62c9f9 0%, #1c2ef4 51%, #14026d 100%);
+    background-size: 200% 100%;
+    animation: gradient-loading 2s ease-in-out infinite;
+}
+
+@keyframes gradient-loading {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
