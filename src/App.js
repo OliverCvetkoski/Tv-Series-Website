@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LatestMovies />} />
           <Route path="/popular" element={<Popular />} />
-          <Route path="/search" element={<Search />}></Route>
+          <Route path="/search" element={<Search />} />
           <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
       </div >
