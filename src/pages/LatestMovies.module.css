@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url('C:\Users\Oliver Cvetkoski\Desktop\movies\movies\src\Pictures\backgroundImage.jpg');
+    background-image: url('../Pictures/backgroundImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

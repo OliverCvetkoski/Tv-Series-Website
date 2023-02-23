@@ -1,6 +1,6 @@
 import React from "react";
 import classes from './LatestMoviesModal.module.css'
-import { GlobalCtx } from "../../context/GlobalCtx";
+import { GlobalCtx } from "../../Context/GlobalCtx";
 import { useContext } from "react";
 
 const LatestMoviesModal = (props) => {

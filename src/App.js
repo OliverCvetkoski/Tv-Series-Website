@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "./Components/Header";
 import { Route, Routes } from 'react-router-dom'
-import LatestMovies from './pages/LatestMovies'
-import Popular from "./pages/Popular";
-import Watchlist from "./pages/Watchlist";
-import { GlobalProvider } from "./context/GlobalCtx";
-import Search from "./pages/Search";
+import LatestMovies from './Pages/LatestMovies'
+import Popular from "./Pages/Popular";
+import Watchlist from "./Pages/Watchlist";
+import { GlobalProvider } from "./Context/GlobalCtx";
+import Search from "./Pages/Search";
 
 
 
