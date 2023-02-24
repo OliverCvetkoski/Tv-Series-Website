@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import LatestMoviesModal from "../Components/UI/LatestMoviesModal";
 import classes from "./Popular.module.css";
 import useMovieSearch from "../Components/Hooks/useSearchMovies";
@@ -36,20 +36,20 @@ const Popular = (props) => {
     const filteredMovies = movies.filter(item => item !== undefined)
 
     return (
-        <Fragment>
-            <h2>Popular Series</h2>
-            <div className={classes.screen_container}>
-                {filteredMovies.map(movie => (
-                    <LatestMoviesModal
-                        key={movie.id}
-                        name={movie.name}
-                        genre={movie.genre}
-                        rating={movie.rating}
-                        img={movie.img}
-                    />
-                ))}
-            </div>
-        </Fragment>
+
+        <div className={classes.screen_container}>
+            <h1>Popular Series</h1>
+            {filteredMovies.map(movie => (
+                <LatestMoviesModal
+                    key={movie.id}
+                    name={movie.name}
+                    genre={movie.genre}
+                    rating={movie.rating}
+                    img={movie.img}
+                    id={movie.id}
+                />
+            ))}
+        </div>
     )
 }
 export default Popular;

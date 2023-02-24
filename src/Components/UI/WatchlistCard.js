@@ -1,6 +1,6 @@
 import classes from './WatchlistCard.module.css'
 import React, { useContext } from "react";
-import { GlobalCtx } from '../../context/GlobalCtx';
+import { GlobalCtx } from '../../Context/GlobalCtx';
 
 
 export const WatchlistCard = (props) => {
@@ -9,13 +9,15 @@ export const WatchlistCard = (props) => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.name}>{props.name}</div>
-            <div className={classes.genre} >{props.genre}</div>
-            <div className={classes.rating} >{props.rating}/10⭐</div>
+            <div className={classes.nameGenreRating}>
+                <div>{props.name}</div>
+                <div>{props.genre}</div>
+                <div>{props.rating}/10⭐</div>
+            </div>
             <div className={classes.style_div}>
                 <img alt="movieImg" src={props.img} className={classes.image} />
             </div >
-            <button className={classes.btn} onClick={() => removeMovieFromWatchlist(props)} >Remove from watchlist</button>
+            <button className={classes.btn} onClick={() => removeMovieFromWatchlist(props.id)} >Remove from watchlist</button>
         </div>
     )
 }

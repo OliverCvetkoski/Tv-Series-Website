@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import classes from './LatestMovies.module.css'
 import LatestMoviesModal from "../Components/UI/LatestMoviesModal";
 import useMovieSearch from "../Components/Hooks/useSearchMovies";
@@ -37,21 +37,19 @@ const LatestMovies = (props) => {
     const filteredMovies = movies.filter(item => item !== undefined)
 
     return (
-        <Fragment>
-            <h2>Latest Series</h2>
-            <div className={classes.container}>
-                {filteredMovies.map(movie => (
-                    <LatestMoviesModal
-                        key={movie.id}
-                        name={movie.name}
-                        genre={movie.genre}
-                        rating={movie.rating}
-                        img={movie.img}
-
-                    />
-                ))}
-            </div>
-        </Fragment>
+        <div className={classes.container}>
+            <h1>Latest Series</h1>
+            {filteredMovies.map(movie => (
+                <LatestMoviesModal
+                    key={movie.id}
+                    name={movie.name}
+                    genre={movie.genre}
+                    rating={movie.rating}
+                    img={movie.img}
+                    id={movie.id}
+                />
+            ))}
+        </div>
     );
 };
 

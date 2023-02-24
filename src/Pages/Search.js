@@ -58,7 +58,8 @@ function Search(props) {
                         name={movie.show.name}
                         genre={movie.show.genres[0]}
                         img={movie.show.image.medium}
-                        rating={JSON.stringify(movie.show.rating.average)} />
+                        rating={JSON.stringify(movie.show.rating.average)}
+                        id={movie.show.id} />
                 ))}
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalCtx } from "../context/GlobalCtx";
+import { GlobalCtx } from "../Context/GlobalCtx";
 import { WatchlistCard } from "../Components/UI/WatchlistCard";
 import classes from './Watchlist.module.css'
 
@@ -8,16 +8,21 @@ const Watchlist = (props) => {
 
     return (
         <div className={classes.container}>
-            {watchlist.map((movie) => (<WatchlistCard
-                key={movie.id}
-                name={movie.name}
-                genre={movie.genre}
-                rating={movie.rating}
-                img={movie.img}
-
-            />))}
+            <h1>My Watchlist</h1>
+            {watchlist.length > 0 ? (
+                watchlist.map((movie) => (
+                    <WatchlistCard
+                        key={movie.id}
+                        id={movie.id}
+                        name={movie.name}
+                        genre={movie.genre}
+                        rating={movie.rating}
+                        img={movie.img}
+                    />
+                ))) : (<div className={classes.noResultsDiv}><p>No series in the watchlist, add some.</p></div>
+            )}
         </div>
-    )
-}
+    );
+};
 
 export default Watchlist;

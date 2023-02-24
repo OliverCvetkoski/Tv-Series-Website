@@ -17,7 +17,6 @@ export const GlobalProvider = (props) => {
 
     const addMovieToWatchlist = movie => {
         dispatch({ type: "ADD", payload: movie })
-        console.log(movie.id)
     };
 
     const removeMovieFromWatchlist = id => {
