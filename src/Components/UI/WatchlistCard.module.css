@@ -21,10 +21,18 @@
     }
 }
 
-.container:hover {
-    border-radius: 14px;
-    box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
-    transition: all 0.2s;
+@media (hover: hover) {
+    .container:hover {
+        border-radius: 14px;
+        box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
+        transition: all 0.2s;
+    }
+
+    .btn:hover {
+        background-color: rgb(73, 89, 210);
+        box-shadow: 0 0px 17px 5px rgba(73, 90, 214, 0.835);
+        transition: all 0.2s
+    }
 }
 
 .name {

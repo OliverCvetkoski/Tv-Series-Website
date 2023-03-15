@@ -71,32 +71,35 @@
     background-color: rgb(49, 64, 174);
 }
 
+@media (hover: hover) {
+    .container:hover {
+        border-radius: 14px;
+        box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
+        transition: all 0.2s;
+    }
 
-.container:hover {
-    border-radius: 14px;
-    box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
-    transition: all 0.2s;
+    .btn:hover {
+        background-color: rgb(73, 89, 210);
+        box-shadow: 0 0px 17px 5px rgba(73, 90, 214, 0.835);
+        transition: all 0.2s
+    }
+
+    .container:hover .btn {
+        bottom: 120px;
+        opacity: 1;
+        transition: all 0.8s;
+    }
+
+    .container:hover .hover_modal {
+        opacity: 1;
+        transition: all 0.9s;
+        left: 50%;
+        top: 120px;
+        transform: translateX(-50%);
+    }
 }
 
-.btn:hover {
-    background-color: rgb(73, 89, 210);
-    box-shadow: 0 0px 17px 5px rgba(73, 90, 214, 0.835);
-    transition: all 0.2s
-}
 
-.container:hover .btn {
-    bottom: 120px;
-    opacity: 1;
-    transition: all 0.8s;
-}
-
-.container:hover .hover_modal {
-    opacity: 1;
-    transition: all 0.9s;
-    left: 50%;
-    top: 120px;
-    transform: translateX(-50%);
-}
 
 @media (max-width:1024px) {
     .hover_modal {
