@@ -24,7 +24,7 @@
 
 .container h1 {
     position: absolute;
-    top: -10%;
+    top: -1%;
     left: 50%;
     color: white;
     transform: translate(-50%, -200%);
@@ -56,5 +56,11 @@
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        margin-top: 8em;
     }
 }

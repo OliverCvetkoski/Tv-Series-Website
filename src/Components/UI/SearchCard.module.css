@@ -1,5 +1,8 @@
 .container {
-    max-height: 0px;
+    position: relative;
+    z-index: 1;
+    max-height: 10px;
+    max-width: 35em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -50,7 +53,7 @@
 .date {
     position: absolute;
     top: 52px;
-    right: 37%;
+    right: 31%;
     font-weight: 700;
     display: flex;
     justify-content: center;

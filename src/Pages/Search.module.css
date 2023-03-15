@@ -71,3 +71,19 @@
     font-weight: 500;
     color: white;
 }
+
+@media (max-width:1024px) {
+    .content {
+        margin-top: 6em;
+    }
+
+    .container {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width:500px) {
+    .input {
+        font-size: 70%;
+    }
+}

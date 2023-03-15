@@ -13,23 +13,27 @@
 .navbar h1 {
     margin-left: 3%;
     color: white;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
 .list {
     display: flex;
     list-style: none;
-    gap: 20px;
-    position: absolute;
-    left: 67%;
+    gap: 1em;
+    padding-left: 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-95%);
+    z-index: 1;
 }
 
 .list a {
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     background-color: rgb(49, 64, 174);
+    font-size: 100%;
 }
 
 .list li:hover {
@@ -39,9 +43,9 @@
 }
 
 .hamburger {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .bar {
     border-radius: 10px;
@@ -54,15 +58,8 @@
     display: none;
 }
 
-
-@media (max-width:1150px) {
-    .list {
-        left: 65%;
-    }
-}
-
-@media (max-width:1010px) {
-    .list {
+@media (max-width:1024px) {
+    .list a {
         display: none;
     }
 
@@ -71,7 +68,6 @@
     }
 }
 
-
 @media (max-width:930px) {
     .list {
         margin-right: 2rem;
@@ -79,20 +75,15 @@
 
 }
 
-@media (max-width: 700px) {
-    .list {
-        display: none;
+@media (max-width:400px) {
+    .navbar h1 {
+        font-size: 1.1em;
     }
+
 }
 
-@media (max-width:360px) {
+@media (max-width:330px) {
     .navbar h1 {
-        font-size: 130%;
-    }
-}
-
-@media (max-width:310px) {
-    .navbar h1 {
-        font-size: 110%;
+        font-size: 0.8em;
     }
 }
