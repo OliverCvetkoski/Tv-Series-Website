@@ -1,12 +1,12 @@
 .container {
     text-align: center;
     max-width: 100%;
-    height: 10vh;
+    height: 100%;
     margin: auto;
     margin-top: 8%;
     position: relative;
     padding: 3%;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,5 +62,16 @@
 @media (max-width:1024px) {
     .container {
         margin-top: 8em;
+    }
+}
+
+@media (max-width:500px) {
+    .container h1 {
+        font-size: 6vw;
+        top: -1em;
+    }
+
+    .noResultsDiv {
+        font-size: 4vw;
     }
 }

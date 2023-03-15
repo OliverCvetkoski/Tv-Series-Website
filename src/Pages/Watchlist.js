@@ -15,8 +15,6 @@ const Watchlist = (props) => {
                         key={movie.id}
                         id={movie.id}
                         name={movie.name}
-                        genre={movie.genre}
-                        rating={movie.rating}
                         img={movie.img}
                     />
                 ))) : (<div className={classes.noResultsDiv}><p>No series in the watchlist, add some.</p></div>

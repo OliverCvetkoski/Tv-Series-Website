@@ -80,6 +80,10 @@
         font-size: 1.1em;
     }
 
+    .hamburger {
+        margin-top: -2%;
+    }
+
 }
 
 @media (max-width:330px) {

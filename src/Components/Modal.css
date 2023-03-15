@@ -40,6 +40,12 @@
 
 @media (max-width: 400px) {
     .modal {
-        top: 8%;
+        top: 7%;
+    }
+}
+
+@media (max-width: 330px) {
+    .modal {
+        top: 5%;
     }
 }

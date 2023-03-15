@@ -9,11 +9,7 @@ export const WatchlistCard = (props) => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.nameGenreRating}>
-                <div>{props.name}</div>
-                <div>{props.genre}</div>
-                <div>{props.rating}/10⭐</div>
-            </div>
+            <div className={classes.name}>{props.name}</div>
             <div className={classes.style_div}>
                 <img alt="movieImg" src={props.img} className={classes.image} />
             </div >

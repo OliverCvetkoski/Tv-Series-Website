@@ -3,7 +3,8 @@ import classes from "./Header.module.css"
 import { useState } from "react";
 import Modal from "./Modal";
 import { NavLink } from "react-router-dom";
-import SearchBarHeader from "./SearchBarHeader";
+import SearchBarHeader from "./SearchBarHeader"
+
 
 
 const Header = (props) => {
@@ -22,8 +23,8 @@ const Header = (props) => {
 
         <nav className={classes.navbar} >
             <h1>The best TV series site</h1>
-            <SearchBarHeader />
             <ul className={classes.list} >
+                <SearchBarHeader />
                 <li><NavLink to="/" className={({ isActive }) => isActive ? classes.active : ''}>Home</NavLink></li>
                 <li><NavLink to="/popular" className={({ isActive }) => isActive ? classes.active : ''} >Popular Series</NavLink></li>
                 <li><NavLink to="/search" className={({ isActive }) => isActive ? classes.active : ''} >Browse Series</NavLink></li>
