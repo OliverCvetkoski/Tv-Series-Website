@@ -1,209 +1,85 @@
 .container {
-    text-align: center;
-    width: 14em;
-    max-height: 1000%;
-    margin: 2em;
-    margin-top: 3em;
-    color: white;
-    border-radius: 15px;
-    padding: 1em;
-    box-shadow: 0 0px 18px 11px rgba(255, 255, 255, 0.671);
-    padding-bottom: 0px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: slideUp 0.6s ease-in-out forwards;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0px 18px 11px rgba(255, 255, 255, 0.671);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.6s ease-in-out forwards;
+}
+
+.style_div {
+  display: flex;
+  justify-content: center;
 }
 
 .btn:disabled {
-    pointer-events: none;
-    background-color: rgb(90, 90, 90);
+  pointer-events: none;
+  background-color: rgb(90, 90, 90);
 }
 
 @keyframes slideUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container:hover {
+  box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
+  transition: all 0.2s;
 }
 
 .name {
-    font-size: 1em;
-    font-weight: bold;
-    position: relative;
-    top: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding: 15px 15px 25px 15px;
+}
+
+.container:hover .btn {
+  opacity: 1;
+  bottom: 80px;
+  transition: all 0.4s;
+}
+
+.container:hover .hover_modal {
+  top: 40%;
+  opacity: 1;
+  transition: all 0.4s;
 }
 
 .btn {
-    position: relative;
-    bottom: 30px;
-    opacity: 0;
-    border-radius: 10px;
-    font-size: 1.5em;
-    background-color: rgb(49, 64, 174);
-    color: white;
-    border: none;
-    padding: 7px;
-    cursor: pointer;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: rgb(49, 64, 174);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+  opacity: 0;
 }
 
 .image {
-    max-width: 100%;
-    min-height: 18em;
-    border-radius: 10px;
-    box-shadow: 0 0px 1px 3px rgba(241, 238, 238, 0.5);
-
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px 3px rgba(241, 238, 238, 0.5);
 }
 
 .hover_modal {
-    font-size: 1.1em;
-    position: relative;
-    display: grid;
-    gap: 10px;
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
-    font-weight: bold;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 5px;
-    padding-left: 8px;
-    opacity: 0;
-    background-color: rgb(49, 64, 174);
-}
-
-@media (hover: hover) {
-    .container:hover {
-        border-radius: 14px;
-        box-shadow: 0 0px 30px 20px rgba(56, 121, 218, 0.835);
-        transition: all 0.2s;
-    }
-
-    .btn:hover {
-        background-color: rgb(73, 89, 210);
-        box-shadow: 0 0px 17px 5px rgba(73, 90, 214, 0.835);
-        transition: all 0.2s
-    }
-
-    .container:hover .btn {
-        bottom: 120px;
-        opacity: 1;
-        transition: all 0.8s;
-    }
-
-    .container:hover .hover_modal {
-        opacity: 1;
-        transition: all 0.9s;
-        left: 50%;
-        top: 120px;
-        transform: translateX(-50%);
-    }
-}
-
-
-
-@media (max-width:1024px) {
-    .hover_modal {
-        display: none;
-    }
-
-    .container {
-        padding-top: 4em;
-    }
-
-    .image {
-        width: 90%;
-        position: relative;
-        top: -1.5em;
-    }
-
-    .name {
-        top: -2.6em;
-    }
-
-    .btn {
-        opacity: 1;
-        top: -15px;
-    }
-}
-
-@media (max-width:685px) {
-    .container {
-        width: 10em;
-        box-shadow: 0 0px 11px 7px rgba(255, 255, 255, 0.671);
-        margin: 1.3em;
-    }
-
-    .image {
-        width: 100%;
-        min-height: 10em;
-        box-shadow: none;
-    }
-
-    .btn {
-        font-size: 1em;
-    }
-}
-
-@media (max-width:500px) {
-    .container {
-        width: 7em;
-        box-shadow: 0 0px 5px 3px rgba(255, 255, 255, 0.671);
-        max-height: 11em;
-        margin: 3%;
-    }
-
-    .image {
-        width: 100%;
-        top: -2.7em;
-    }
-
-    .name {
-        font-size: 0.7em;
-        top: -4.7em;
-    }
-
-    .btn {
-        top: -3.5em;
-        font-size: 0.7em;
-    }
-}
-
-@media (max-width:400px) {
-    .container {
-        width: 6em;
-        max-height: 9em;
-
-    }
-
-    .image {
-        min-height: 8em;
-        top: -2.7em;
-    }
-
-    .name {
-        font-size: 0.5em;
-        top: -6.5em;
-    }
-
-    .btn {
-        font-size: 0.5em;
-        top: -5em;
-    }
-
-}
-
-@media (max-width:315px) {
-    .container {
-        width: 5em;
-        max-height: 7em;
-
-    }
-
-    .image {
-        min-height: 7em;
-    }
-
-    .btn {
-        top: -5.6em;
-    }
+  position: absolute;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  top: 20%;
+  gap: 5px;
+  opacity: 0;
+  background-color: rgb(49, 64, 174);
 }

@@ -1,31 +1,32 @@
 .error_div {
-    color: white;
-    font-weight: 600;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 250%);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 15%;
-    height: 70px;
-    border-radius: 8px;
-    background-image: linear-gradient(to right, #f98a62 0%, #f4471c 51%, #a40101 100%);
-    background-size: 200% 100%;
-    animation: gradient-loading 2s ease-in-out infinite;
+  color: white;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #f98a62 0%,
+    #f4471c 51%,
+    #a40101 100%
+  );
+  background-size: 200% 100%;
+  animation: gradient-loading 2s ease-in-out infinite;
 }
 
 @keyframes gradient-loading {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }

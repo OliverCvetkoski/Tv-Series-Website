@@ -1,10 +1,8 @@
-import React from 'react'
-import classes from './LoadingDiv.module.css'
+import React from "react";
+import classes from "./LoadingDiv.module.css";
 
 const LoadingDiv = () => {
-    return (
-        <div className={classes.loading_div}>Loading...</div>
-    )
-}
+  return <div className={classes.loading_div}>Loading...</div>;
+};
 
 export default LoadingDiv;

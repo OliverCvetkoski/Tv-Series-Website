@@ -1,93 +1,74 @@
 .navbar {
-    background: linear-gradient(0deg, rgba(14, 22, 78, 1) 46%, rgb(16, 141, 191) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.list a.active {
-    background-color: rgb(36, 50, 156);
-    box-shadow: 0 0px 12px 5px rgba(255, 255, 255, 0.835);
-}
-
-.navbar h1 {
-    margin-left: 3%;
-    color: white;
-    font-size: 1.5em;
+  background: linear-gradient(
+    0deg,
+    rgba(14, 22, 78, 1) 46%,
+    rgb(16, 141, 191) 100%
+  );
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .list {
-    display: flex;
-    list-style: none;
-    gap: 1em;
-    padding-left: 0px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-95%);
-    z-index: 1;
+  display: flex;
+  gap: 1.5em;
+  position: absolute;
+  right: 40px;
+}
+
+a.active {
+  background-color: rgb(36, 50, 156);
+  box-shadow: 0 0px 12px 5px rgba(255, 255, 255, 0.835);
+}
+
+.navbar h1 {
+  color: white;
+  margin-left: 2em;
 }
 
 .list a {
-    text-decoration: none;
-    color: #fff;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: rgb(49, 64, 174);
-    font-size: 100%;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(49, 64, 174);
 }
 
-.list li:hover {
-    background-color: rgb(64, 78, 187);
-    box-shadow: 0 1px 15px 10px rgba(56, 121, 218, 0.835);
-    transition: all 0.3s;
+.list a:hover {
+  background-color: rgb(64, 78, 187);
+  box-shadow: 0 1px 15px 10px rgba(56, 121, 218, 0.835);
+  transition: all 0.3s;
 }
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .bar {
-    border-radius: 10px;
-    display: block;
-    width: 35px;
-    height: 4px;
-    background-color: white;
-    margin-right: 20px;
-    margin-top: 8px;
+  border-radius: 10px;
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .list a {
     display: none;
-}
+  }
 
-@media (max-width:1024px) {
-    .list a {
-        display: none;
-    }
+  .hamburger {
+    gap: 8px;
+    display: flex;
+  }
 
-    .bar {
-        display: inherit;
-    }
-}
-
-@media (max-width:930px) {
-    .list {
-        margin-right: 2rem;
-    }
-
-}
-
-@media (max-width:400px) {
-    .navbar h1 {
-        font-size: 1.1em;
-    }
-
-    .hamburger {
-        margin-top: -2%;
-    }
-
-}
-
-@media (max-width:330px) {
-    .navbar h1 {
-        font-size: 0.8em;
-    }
+  .navbar h1 {
+    margin-left: 10px;
+  }
 }
